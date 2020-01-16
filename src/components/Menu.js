@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import Logo from './Logo'
 
 const Header = styled.header`
   background: ${props => props.theme.colors.base};
@@ -16,6 +17,7 @@ const Nav = styled.nav`
   ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   li {
@@ -33,6 +35,8 @@ const Nav = styled.nav`
     color: DarkGray;
     font-weight: 600;
     transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
     border-bottom: 2px solid ${props => props.theme.colors.base};
     &:hover {
       color: white;
@@ -51,7 +55,7 @@ const Menu = () => {
         <ul>
           <li>
             <Link to="/" activeStyle={activeLinkStyle}>
-              Home
+              <Logo /> Home
             </Link>
           </li>
           <li>
