@@ -2,10 +2,14 @@
   "development": {
     "host": "preview.contentful.com",
     "spaceId": "dnjxgfivke25",
-    "accessToken": "HWHAAzS_qdQPIrB_hchF3oieDqqCtpTEe1JVbNpcYIk"
+    "contentDelivery": "4z_xIWPh5Krp1ujH1lg3TkjHyKwBGjTB972kFYYs_NQ",
+    "contentPreview": "HWHAAzS_qdQPIrB_hchF3oieDqqCtpTEe1JVbNpcYIk",
+    "accessToken": "CFPAT-96D6ScgALpC-QeCReH8lpMF6QQ6KRDZe241ltzjOsUI"
   },
   "production": {
     "spaceId": "dnjxgfivke25",
-    "accessToken": "4z_xIWPh5Krp1ujH1lg3TkjHyKwBGjTB972kFYYs_NQ"
+    "contentDelivery": "4z_xIWPh5Krp1ujH1lg3TkjHyKwBGjTB972kFYYs_NQ",
+    "contentPreview": "HWHAAzS_qdQPIrB_hchF3oieDqqCtpTEe1JVbNpcYIk",
+    "accessToken": "CFPAT-96D6ScgALpC-QeCReH8lpMF6QQ6KRDZe241ltzjOsUI"
   }
 }
