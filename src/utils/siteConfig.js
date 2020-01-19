@@ -5,6 +5,7 @@ module.exports = {
   siteDescription:
     'Know more about Tribes around the world.',
   siteUrl: 'https://tribesaround.com', // Site domain. Do not include a trailing slash! If you wish to use a path prefix you can read more about that here: https://www.gatsbyjs.org/docs/path-prefix/
+  canonical: 'tribesaround.com',
   postsPerHomePage: 7, // Number of posts shown on the 1st page of of the index.js template (home page)
   postsPerPage: 6, // Number of posts shown on paginated pages
   author: 'Tribal Chef', // Author for RSS author segment and SEO schema

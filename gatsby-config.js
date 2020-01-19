@@ -71,6 +71,7 @@ module.exports = {
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS,
         head: true,
+        cookieDomain: config.canonical,
       },
     },
     'gatsby-plugin-sitemap',
@@ -94,7 +95,7 @@ module.exports = {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata
           ret.allMarkdownRemark = ref.query.allMarkdownRemark
-          ret.generator = 'GatsbyJS GCN Starter'
+          ret.generator = 'GatsbyJs'
           return ret
         },
         query: `

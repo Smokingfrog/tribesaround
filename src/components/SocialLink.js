@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import config from '../utils/siteConfig'
-
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const Icon = styled.div`
   position: relative;
@@ -28,12 +28,12 @@ const LinkList = styled.ul`
 const SocialLink = () => {
   return (
     <LinkList>
-      <li><a href={`https://facebook.com/${config.userFacebook}`}><Icon icon={`${'/svg/facebook'}`}/></a></li>
-      <li><a href={`https://instagram.com/${config.userInstagram}`}><Icon icon={`${'/svg/instagram'}`} /></a></li>
-      <li><a href={`https://twitter.com/${config.userTwitter}`}><Icon icon={`${'/svg/twitter'}`} /></a></li>
-      <li><a href={`https://soundcloud.com/${config.userSoundcloud}`}><Icon icon={`${'/svg/soundcloud'}`} /></a></li>
-      <li><a href={`https://youtube.com/${config.userYoutube}`}><Icon icon={`${'/svg/youtube'}`} /></a></li>
-      <li><a href={`${config.siteUrl}/rss.xml`}><Icon icon={`${'/svg/rss'}`} /></a></li>
+      <li><OutboundLink href={`https://facebook.com/${config.userFacebook}`}><Icon icon={`${'/svg/facebook'}`}/></OutboundLink></li>
+      <li><OutboundLink  href={`https://instagram.com/${config.userInstagram}`}><Icon icon={`${'/svg/instagram'}`} /></OutboundLink></li>
+      <li><OutboundLink href={`https://twitter.com/${config.userTwitter}`}><Icon icon={`${'/svg/twitter'}`} /></OutboundLink></li>
+      <li><OutboundLink href={`https://soundcloud.com/${config.userSoundcloud}`}><Icon icon={`${'/svg/soundcloud'}`} /></OutboundLink></li>
+      <li><OutboundLink href={`https://youtube.com/${config.userYoutube}`}><Icon icon={`${'/svg/youtube'}`} /></OutboundLink></li>
+      <li><OutboundLink href={`${config.siteUrl}/rss.xml`}><Icon icon={`${'/svg/rss'}`} /></OutboundLink></li>
     </LinkList>
   )
 }
