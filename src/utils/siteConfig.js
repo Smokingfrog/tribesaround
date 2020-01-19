@@ -2,8 +2,7 @@ module.exports = {
   siteTitle: 'Tribes Around',
   siteTitleAlt: 'Tribes Around The World', // This allows an alternative site title for SEO schema.
   publisher: 'TribesAround', // Organization name used for SEO schema
-  siteDescription:
-    'Know more about Tribes around the world.',
+  siteDescription: 'Know more about Tribes around the world.',
   siteUrl: 'https://tribesaround.com', // Site domain. Do not include a trailing slash! If you wish to use a path prefix you can read more about that here: https://www.gatsbyjs.org/docs/path-prefix/
   canonical: 'tribesaround.com',
   postsPerHomePage: 7, // Number of posts shown on the 1st page of of the index.js template (home page)
@@ -25,14 +24,14 @@ module.exports = {
   copyright: 'Copyright © 2020 Tribes Around', // Copyright string for the RSS feed
   analyticsId: 'UA-156264832-1',
   contentful: {
-    "development": {
-      "host": "preview.contentful.com",
-      "spaceId": "dnjxgfivke25",
-      "accessToken": "HWHAAzS_qdQPIrB_hchF3oieDqqCtpTEe1JVbNpcYIk"
+    development: {
+      host: 'preview.contentful.com',
+      spaceId: 'dnjxgfivke25',
+      accessToken: 'HWHAAzS_qdQPIrB_hchF3oieDqqCtpTEe1JVbNpcYIk',
     },
-    "production": {
-      "spaceId": "dnjxgfivke25",
-      "accessToken": "4z_xIWPh5Krp1ujH1lg3TkjHyKwBGjTB972kFYYs_NQ"
-    }
-  }
+    production: {
+      spaceId: 'dnjxgfivke25',
+      accessToken: '4z_xIWPh5Krp1ujH1lg3TkjHyKwBGjTB972kFYYs_NQ',
+    },
+  },
 }

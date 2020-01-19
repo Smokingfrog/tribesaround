@@ -142,11 +142,6 @@ const Button = styled.div`
   }
 `
 
-const encode = data => {
-  return Object.keys(data) && copy
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -172,7 +167,6 @@ class ContactForm extends React.Component {
     fetch('/?no-cache=1', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state }),
     })
       .then(this.handleSuccess)
       .catch(error => alert(error))
