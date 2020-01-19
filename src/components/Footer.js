@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import SocialLink from './SocialLink'
 
 const Wrapper = styled.footer`
   display: flex;
@@ -24,9 +25,11 @@ const List = styled.ul`
 const Item = styled.li`
   display: inline-block;
   padding: 0.25em 0;
-  width: 100%;
+  width: 33%;
+  align-self: center;
+  position: relative;
   @media screen and (min-width: ${props => props.theme.responsive.small}) {
-    width: auto;
+    width: 33%;
   }
   a {
     font-weight: 600;
@@ -56,6 +59,7 @@ const Footer = () => (
           </svg>
         </a>
       </Item>
+      <Item><SocialLink /></Item>
       <Item>
         All right reserved 2020{' '}|{' '}
         <a

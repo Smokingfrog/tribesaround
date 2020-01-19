@@ -9,12 +9,17 @@ import Pagination from '../components/Pagination'
 import SEO from '../components/SEO'
 import config from '../utils/siteConfig'
 
+const SocialLink = (link) => {
+  console.log(link)
+return <pre></pre>
+}
 const Index = ({ data, pageContext }) => {
   const posts = data.allContentfulPost.edges
+  const sociallink = data.allContentfulSocialMediaAccounts.edges
   const featuredPost = posts[0].node
   const { currentPage } = pageContext
   const isFirstPage = currentPage === 1
-
+console.log(sociallink.map(({ node : link}) => link))
   return (
     <Layout>
       <SEO />
@@ -40,6 +45,7 @@ const Index = ({ data, pageContext }) => {
         )}
       </Container>
       <Pagination context={pageContext} />
+      <SocialLink link={sociallink}/>
     </Layout>
   )
 }
@@ -70,6 +76,14 @@ export const query = graphql`
               excerpt(pruneLength: 80)
             }
           }
+        }
+      }
+    }
+    allContentfulSocialMediaAccounts {
+      edges {
+        node {
+          instagram
+          facebook
         }
       }
     }
