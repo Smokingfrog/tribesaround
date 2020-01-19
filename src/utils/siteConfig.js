@@ -23,4 +23,16 @@ module.exports = {
   backgroundColor: '#e9e9e9', // Used for Offline Manifest
   themeColor: '#121212', // Used for Offline Manifest
   copyright: 'Copyright © 2020 Tribes Around', // Copyright string for the RSS feed
+  analyticsId: '',
+  contentful: {
+    "development": {
+      "host": "preview.contentful.com",
+      "spaceId": "dnjxgfivke25",
+      "accessToken": "HWHAAzS_qdQPIrB_hchF3oieDqqCtpTEe1JVbNpcYIk"
+    },
+    "production": {
+      "spaceId": "dnjxgfivke25",
+      "accessToken": "4z_xIWPh5Krp1ujH1lg3TkjHyKwBGjTB972kFYYs_NQ"
+    }
+  }
 }
