@@ -29,32 +29,32 @@ const SocialLink = () => {
   return (
     <LinkList>
       <li>
-        <OutboundLink href={`https://facebook.com/${config.userFacebook}`}>
+       <OutboundLink target="_blank" href={`https://facebook.com/${config.userFacebook}`}>
           <Icon icon={`${'/svg/facebook'}`} />
         </OutboundLink>
       </li>
       <li>
-        <OutboundLink href={`https://instagram.com/${config.userInstagram}`}>
+       <OutboundLink target="_blank" href={`https://instagram.com/${config.userInstagram}`}>
           <Icon icon={`${'/svg/instagram'}`} />
         </OutboundLink>
       </li>
       <li>
-        <OutboundLink href={`https://twitter.com/${config.userTwitter}`}>
+       <OutboundLink target="_blank" href={`https://twitter.com/${config.userTwitter}`}>
           <Icon icon={`${'/svg/twitter'}`} />
         </OutboundLink>
       </li>
       <li>
-        <OutboundLink href={`https://soundcloud.com/${config.userSoundcloud}`}>
+       <OutboundLink target="_blank" href={`https://soundcloud.com/${config.userSoundcloud}`}>
           <Icon icon={`${'/svg/soundcloud'}`} />
         </OutboundLink>
       </li>
       <li>
-        <OutboundLink href={`https://youtube.com/${config.userYoutube}`}>
+       <OutboundLink target="_blank" href={`https://youtube.com/${config.userYoutube}`}>
           <Icon icon={`${'/svg/youtube'}`} />
         </OutboundLink>
       </li>
       <li>
-        <OutboundLink href={`${config.siteUrl}/rss.xml`}>
+       <OutboundLink target="_blank" href={`${config.siteUrl}/rss.xml`}>
           <Icon icon={`${'/svg/rss'}`} />
         </OutboundLink>
       </li>
