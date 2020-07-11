@@ -122,7 +122,8 @@ class SEO extends Component {
         {/* General tags */}
         <meta name="image" content={image} />
         <meta name="description" content={description} />
-
+        {/* SEO Meta */}
+        <meta name="facebook-domain-verification" content={config.seoMeta.facebook} />
         {/* Schema.org tags */}
         <script type="application/ld+json">
           {JSON.stringify(schemaOrgJSONLD)}
