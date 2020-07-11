@@ -34,4 +34,11 @@ module.exports = {
       accessToken: '4z_xIWPh5Krp1ujH1lg3TkjHyKwBGjTB972kFYYs_NQ',
     },
   },
+    seoMeta: {
+        facebook: '6iydpapgbyu8y7g9lfykj8wvhgm9h9',
+        google: '',
+        twitter: '',
+        linkedin: '',
+        pintrest: '',
+    },
 }

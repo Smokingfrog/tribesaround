@@ -5,3 +5,5 @@ public/
 yarn*
 *.log
 contentful-import-error-log*
+package-lock.json
+
